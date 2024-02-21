@@ -1,0 +1,26 @@
+.product_container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 0;
+    position: relative;
+    left: 7px;
+    /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 600px){
+    .product_container{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .product_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+    }
+}

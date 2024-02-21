@@ -1,0 +1,514 @@
+.AdminPage {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.AdminPage .admin-nav {
+  height: 50px;
+  border: 2px solid green;
+  margin: 5px;
+}
+
+.AdminPage .admin-container {
+  margin-top: 130px;
+  width: 100%;
+  background: #fbf9f6;
+  display: flex;
+}
+
+.AdminPage .admin-container .active {
+  display: flex;
+  width: 100%;
+}
+
+.AdminPage .admin-container .heading {
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #e57200;
+}
+
+.AdminPage .admin-container .admin-addproduct .admin-form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.AdminPage .admin-container .admin-addproduct .admin-form input {
+  color: black;
+  width: 90%;
+  padding: 4px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  /* background: rgb(255, 254, 254); */
+}
+
+.AdminPage .admin-container .admin-addproduct .admin-form select {
+  color: black;
+  width: 90%;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.AdminPage .admin-container .admin-addproduct .admin-form button {
+  border: none;
+  background: #ea5200;
+  color: white;
+  padding: 3px;
+  border-radius: 25px;
+  width: 90%;
+  margin: 35px 5px;
+}
+
+.AdminPage .admin-container .admin-addproduct .admin-form button:hover {
+  background: #e57200;
+  color: white;
+}
+
+/* ================ Sidebar ================ */
+
+.AdminPage .admin-container .admin-sidebar {
+  background: #ea5200;
+  width: 20%;
+  border: 1px solid rgb(255, 158, 3);
+  color: white;
+  /* padding: 0 20px; */
+  /* background: #fbf9f6; */
+  /* margin: 5px; */
+}
+
+.AdminPage .admin-container .admin-sidebar .Admin-heading {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.AdminPage .admin-container .admin-sidebar .active-btn {
+  margin: 30px 0;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  border-bottom: 1px solid rgb(187, 164, 164);
+}
+
+.AdminPage .admin-container .padd-15 {
+  padding-left: 15px;
+}
+
+.AdminPage .admin-container .sub-head {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.AdminPage .admin-container .admin-sidebar .filter {
+  display: flex;
+  margin: 10px;
+  /* gap: 3px; */
+  flex-direction: column;
+  align-items: start;
+}
+
+.AdminPage .admin-container .admin-sidebar .filter-category div {
+  display: flex;
+  align-items: center;
+}
+
+.AdminPage .admin-container .admin-sidebar input {
+  height: 30px;
+  accent-color: #e57200;
+  color: white;
+}
+.AdminPage .admin-container .admin-sidebar label:hover {
+  color: #e57200;
+}
+
+.AdminPage .admin-container .admin-sidebar label {
+  margin-left: 10px;
+}
+.AdminPage .admin-container .admin-sidebar label span {
+  color: #e57200;
+}
+
+.AdminPage .admin-container .admin-sidebar .sorting select {
+  border: 1px solid black;
+  width: 100%;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color div {
+  display: flex;
+  align-items: center;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .color {
+  border: 1px solid gray;
+  margin-left: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.AdminPage .admin-container .admin-sidebar .filter-color .black {
+  background: black;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .red {
+  background: red;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .green {
+  background: green;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .brown {
+  background: brown;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .blue {
+  background: blue;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .orange {
+  background: orangered;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .gray {
+  background: gray;
+}
+.AdminPage .admin-container .admin-sidebar .filter-color .pink {
+  background: rgb(233, 23, 93);
+}
+
+/* ================    Admin Users      ======================*/
+
+/* .AdminPage .admin-container .admin-users-list {
+  display: flex;
+  padding-left: 20%;
+  width: 100%;
+} */
+
+.AdminPage .admin-container .admin-users {
+  width: 80%;
+  border: 1px solid rgb(255, 158, 3);
+  /* margin: 5px; */
+}
+.AdminPage .admin-container .admin-adduser {
+  width: 30%;
+  border: 1px solid rgb(255, 158, 3);
+  /* margin: 5px; */
+}
+.AdminPage .admin-container .admin-adduser .admin-user-form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.AdminPage .admin-container .admin-adduser .admin-user-form input {
+  color: black;
+  width: 90%;
+  height: 35px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.AdminPage .admin-container .admin-adduser .admin-user-form button {
+  border: 1px solid rgb(219, 85, 36);
+  background: #ea5200;
+  color: white;
+  padding: 3px;
+  border-radius: 25px;
+  width: 90%;
+  margin: 30px 5px;
+}
+
+/* ================    Admin Products      ======================*/
+
+/* .AdminPage .admin-container .admin-product-list {
+  display: flex;
+  padding-left: 266px;
+  width: 100%;
+  border: 2px solid red;
+} */
+
+.AdminPage .admin-container .admin-products {
+  width: 80%;
+  overflow: auto;
+  height: 90vh;
+  scrollbar-color: red yellow;
+  /* border: 1px solid rgb(255, 158, 3); */
+  /* margin: 5px; */
+}
+.AdminPage .admin-container .admin-addproduct {
+  width: 30%;
+  border: 1px solid rgb(255, 158, 3);
+  /* margin: 5px; */
+}
+
+/* ==============   Product Card ================*/
+
+.AdminPage .admin-container .product-card {
+  width: 98%;
+  margin: 10px;
+  border: 1px solid gray;
+  gap: 10px;
+  padding: 5px;
+  /* margin: 5px; */
+  display: flex;
+}
+
+.AdminPage .admin-container .product-card .product-card-img-div {
+  width: 20%;
+}
+.AdminPage .admin-container .product-card .product-card-img-div img {
+  width: 100%;
+  height: 150px;
+}
+
+.AdminPage .admin-container .product-card .product-card-details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 30px;
+}
+
+.AdminPage .admin-container .product-card .product-card-details p {
+  color: rgb(68, 68, 68);
+  font-size: 17px;
+}
+
+.AdminPage .admin-container .product-card .product-card-details .product-title {
+  padding-left: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.AdminPage .admin-container .product-card .edit-delete-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.AdminPage .admin-container .product-card .edit-delete-btn button:nth-child(1) {
+  width: 110px;
+}
+
+.AdminPage .admin-container .product-card .edit-delete-btn .sub-head {
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.AdminPage .admin-container .product-card .product-card-category {
+  display: flex;
+  align-items: center;
+}
+
+.AdminPage .admin-container .product-card .price {
+  color: #e57200;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: rgba(185, 188, 191, 0.2) 0px 0px 24px 5px;
+  border-radius: 5px;
+  font-family: arial;
+  overflow: auto;
+}
+
+/* Table Header Styles */
+table thead th {
+  padding: 10px 50px;
+  text-align: left;
+  background-color: #f3f3f5;
+}
+
+/* Table Body Styles */
+
+table tbody ttr:nth-of-type(odd) {
+  background: #eee;
+}
+table tbody tr td {
+  padding: 0px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.AdminPage .admin-container table .sub-head {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Action Buttons Styles */
+table tbody tr .action {
+  display: flex;
+}
+
+table tbody tr .action button {
+  margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  border-bottom: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+table tbody tr .action button:last-child {
+  margin-right: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  table {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 50px 10px 10px 10px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: rgba(185, 188, 191, 0.2) 0px 0px 24px 5px;
+  }
+
+  table tbody tr td {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-right: 16px;
+    border: none;
+    flex-wrap: wrap;
+  }
+
+  table tbody tr td .res-head {
+    display: block;
+    font-weight: 700;
+    margin-right: 5px;
+  }
+
+  table tbody tr td:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  table tbody tr .action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/*==========    Dashboard    =====*/
+.AdminPage .admin-container .admin-main-dashboard {
+  border: 1px solid #e57200;
+  width: 100%;
+}
+
+.AdminPage .admin-container .dashboard-container {
+  margin-left: 50px;
+}
+
+/*==========    Admin Cart    =====*/
+
+.AdminPage .admin-container .admin-cart {
+  border: 1px solid #e57200;
+  overflow: auto;
+}
+
+/*==========    Admin Offers    =====*/
+.AdminPage .admin-container .admin-cart .offers-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.AdminPage .admin-container .admin-cart .offers-container > div {
+  width: 100%;
+  padding-left: 30px;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.AdminPage .admin-container .admin-cart .offers-container .offers-heading {
+  width: 300px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #e57200;
+}
+.AdminPage .admin-container .admin-cart .offers-container .sub-head {
+  font-size: 18px;
+  margin: 10px;
+  font-weight: bold;
+}
+.AdminPage
+  .admin-container
+  .admin-cart
+  .offers-container
+  > div
+  > div:nth-child(1) {
+  width: 70%;
+}
+.AdminPage
+  .admin-container
+  .admin-cart
+  .offers-container
+  > div
+  > div:nth-child(2) {
+  width: 30%;
+}
+.AdminPage
+  .admin-container
+  .admin-cart
+  .offers-container
+  > div
+  > div:nth-child(2)
+  img {
+  padding: 10px;
+  width: 90%;
+  height: 200px;
+}
+
+.AdminPage
+  .admin-container
+  .admin-cart
+  .offers-container
+  > div
+  > div:nth-child(1)
+  .sale-desc {
+  margin: 10px;
+  line-height: 25px;
+  width: 60%;
+  font-size: 15px;
+  color: rgb(94, 94, 94);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+}
